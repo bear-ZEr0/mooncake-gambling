@@ -1,0 +1,18 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/index/index",
+        "pages/multiply/multiply",
+        "pages/rule/rule"
+    ],
+    "window": {
+        "backgroundColor": "#97694f",
+        "backgroundColorTop": "#97694f",
+        "backgroundColorBottom": "#97694f",
+        "navigationBarBackgroundColor": "#2082f1",
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "摇骰子",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+}

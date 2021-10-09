@@ -1,0 +1,5 @@
+<!--pages/rule/rule.wxml-->
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="/images/rule.jpg" mode="aspectFill"></image>
+</view>

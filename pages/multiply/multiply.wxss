@@ -1,0 +1,223 @@
+/* pages/multiplayer/multiplayer.wxss */
+
+page{
+	height: aotu;
+  
+}
+
+.container{
+	
+	display: flex;
+	flex-direction: column
+}
+.background{ 
+    width: 100%;
+    height: 110%;
+    align-self: center;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1; 
+}
+
+.title{
+	margin: 15rpx;
+	text-align: center;
+	font-size: 45rpx;
+	font-style: italic;
+	font-weight: bold
+}
+
+.settings{
+	margin: 15rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center
+}
+
+.body{
+	margin: 15rpx;
+	height: 800rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center
+}
+
+.diceListItem{
+	width: 100rpx;
+	height: 100rpx;
+	position: absolute;
+	left: 300rpx;
+	top: -350rpx
+}
+
+.result{
+	margin: 15rpx;
+	display: flex;
+	flex-direction: column
+}
+
+.countSum{
+	align-self: center;
+	font-size: 40rpx;
+	font-weight: bold;
+	font-family: SimSun;
+	padding: 15rpx
+}
+
+.countList{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center
+}
+
+.countListItem{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.button{
+	height: 120rpx!important;
+	width: 200rpx !important;
+	color: rgb(8, 7, 7)!important;
+	font-size: 50rpx!important;
+	top: -500rpx!important;
+	border-radius: 200rpx!important;
+}
+
+  
+.result1{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	color: rgb(245, 238, 238)!important ;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result2{
+	margin: 40rpx;
+	text-align: center;
+	color: rgb(245, 238, 238)!important ;
+	font-size: 70rpx;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result3{
+	margin: 40rpx;
+	text-align: center;
+	color: rgb(245, 238, 238)!important ;
+	font-size: 70rpx;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result4{
+	margin: 40rpx;
+	text-align: center;
+	color: rgb(245, 238, 238)!important ;
+	font-size: 70rpx;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result5{
+	margin: 40rpx;
+	text-align: center;
+	color: rgb(245, 238, 238)!important ;
+	font-size: 70rpx;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result6{
+	margin: 40rpx;
+	text-align: center;
+	color: rgb(245, 238, 238)!important ;
+	font-size: 70rpx;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result7{
+	margin: 40rpx;
+	text-align: center;
+	color: rgb(245, 238, 238)!important ;
+	font-size: 70rpx;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result8{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	color: rgb(245, 238, 238)!important ;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result9{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	color: rgb(245, 238, 238)!important ;
+	font-style: italic;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result10{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	font-style: italic;
+	color: rgb(245, 238, 238)!important ;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result11{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	font-style: italic;
+	color: rgb(245, 238, 238)!important ;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result12{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	font-style: italic;
+	color: rgb(245, 238, 238)!important ;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+.result13{
+	margin: 40rpx;
+	text-align: center;
+	font-size: 70rpx;
+	font-style: italic;
+	color: rgb(245, 238, 238)!important ;
+	font-weight: bold;
+	position: fixed;
+	top:10%
+}
+
+  

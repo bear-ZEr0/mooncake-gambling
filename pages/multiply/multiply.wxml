@@ -1,0 +1,105 @@
+<!--pages/multiplayer/multiplayer.wxml-->
+
+
+
+<view class='container'>
+    <image class='background' src="/images/back.png" mode="aspectFill"></image>
+    <view class='title' style='color: rgb(240, 243, 234);'>摇一摇</view>
+
+    <view class='settings'>
+    <view hover-class='hoverText' style='color: rgb(246, 247, 244);font-size: 37rpx' bindtap='changeSwitch'>{{switchText}}</view>
+    <!-- <view>
+        <button size='mini' type='primary' bindtap='play' hover-class='hover'>Play</button>
+    </view> -->
+    </view>
+
+    <view class='body'>
+        </view>
+
+        <view class='result' hidden="{{switchText=='展示骰子'}}">
+        <view class='countSum' style='color: rgb(244, 247, 241); top:1000rpx；'>点数：{{countSum}}</view>
+        </view>
+
+        </view>
+
+        <block wx:for='{{diceList}}' wx:key='index'>
+            <view class='diceListItem' hidden="{{switchText=='展示骰子'}}" animation='{{item.animationData}}' bindtransitionend='end'>
+                <image src='../../images/GoldDice_blue{{item.value}}.png' mode='aspectFit' style='width: 100rpx;height: 100rpx;border-radius: 10%'></image>
+            </view>
+        </block>
+
+        <navigator hover-class="none">
+            <button type="default" title="1" open-type="share" hover-class="none" style="height: 120rpx; width: 200rpx; color: rgb(8, 7, 7); font-size: 50rpx; top: 0rpx;">分享结果</button>
+        </navigator>
+
+        <view class="btn-area" id="buttonContainer">
+            <button type="default" style="height: 120rpx; width: 200rpx; color: rgb(8, 7, 7); font-size: 50rpx; top: 20rpx"
+                bindtap="gotopattern">结束</button>
+        </view>
+    
+
+
+<block wx:if="{{countList[0]==1}}">
+	<block wx:if="{{countList[1]==1}}">
+		<block wx:if="{{countList[2]==1}}">
+			<block wx:if="{{countList[3]==1}}">
+				<view class = "result1"><text>your result is:对堂</text></view>
+			</block>
+		</block>
+	</block>
+</block>
+
+<block wx:if="{{countList[0]!=1 || countList[1]!=1 || countList[2]!=1 ||  countList[4]!=1 || countList[5]!=1 }}">
+	<block wx:if="{{countList[3]==1}}">
+    		<view class = "result2"><text>your result is：一秀</text></view>
+	</block>
+</block>
+
+<block wx:if="{{countList[3]==2}}">
+	<view class = "result3"><text>your result is:二秀</text></view>
+</block>
+
+<block wx:if="{{countList[3]==3}}">
+	<view class = "result4"><text>your result is:三红</text></view>
+</block>
+
+<block wx:if="{{countList[3]==4}}">
+	<block wx:if="{{countList[1]==2}}">
+		<view class = "result5"><text>your result is:状元金花</text></view>
+	</block>
+</block>
+
+<block wx:if="{{countList[4]==4}}">
+	<block wx:if="{{countList[1]>2}}">
+		<view class = "result6"><text>your result is:状元</text></view>
+	</block>
+	<block wx:if="{{countList[1]<2}}">
+		<view class = "result6"><text>your result is:状元</text></view>
+	</block>
+</block>
+
+<block wx:if="{{countList[2]==5}}">
+		<view class = "result7"><text>your result is:五子登科</text></view>
+</block>
+
+<block wx:if="{{countList[3]==6}}">
+		<view class = "result8"><text>your result is:六红</text></view>
+</block>
+
+<block wx:if="{{countList[5]==6}}">
+		<view class = "result9"><text>your result is:六黑</text></view>
+</block>
+
+<block wx:if="{{countList[2]==6}}">
+		<view class = "result6"><text>your result is:状元</text></view>
+</block>
+
+<block wx:if="{{countList[3]==0}}">
+	<block wx:if="{{countList[0]!=4 && countList[1]!=4 && countList[2]!=4 && countList[4]!=4 && countList[5]!=4}}">
+		<block wx:if="{{countList[0]!=5 && countList[1]!=5 && countList[2]!=5 && countList[4]!=5 && countList[5]!=5}}">
+			<block wx:if="{{countList[0]!=6 && countList[1]!=6 && countList[2]!=6 && countList[4]!=6 && countList[5]!=6}}">
+    		<view class = "result10"><text>遗憾无果</text></view>
+			</block>
+		</block>
+	</block>
+</block>
